@@ -34,7 +34,19 @@
         Vous ête un homme <input type="radio" name="sexe" value="Homme"> 
         Vous ête une femme <input type="radio" name="sexe" value="Femme"><br>  
        </fieldset>
-       
+       <select name="metier">
+        <option value="Développeur">Développeur</option>
+        <option value="Autre">Autre</option>
+        </select>
+         <br>Si vous avez répondu autre, précise <input type="text">
+         <br>
+         <br><select name="paye">
+            <option value="<1000€"><1000€</option>
+            <option value=">1000€">>1000€</option>
+            </select>
+            <br>En quelle année avez-vous suivi le stage afpa ? <input type="text">
+            <br>
+            <br><textarea name="commentaire" rows="5" cols="30">Vos commentaires</textarea>
         
       
        
@@ -44,7 +56,7 @@
 
        <h3>Merci d'avoir répondu au questionnaire</h3>
         <input type="submit" value="Validez">
-        <input type="submit" value="Annulez">      
+        <input type="reset" value="Annulez">      
      
     </form>
 
