@@ -3,11 +3,15 @@ body {
     margin-left: 100px;
    }
    h1 {
-    font-size: 48pt;
-    color :#FF0000;
-    font-style: italic;
-    border-bottom: solid thin rgb(189, 0, 0);
+    
+    color: red;
+ border: 2px solid blue;
+ background-color: yellow;
+ font-family: verdana;
+
+
    }
+   
     h2, h6 {font-size: 32pt;
     color: chocolate;
     
@@ -20,11 +24,16 @@ h3, h4, h5 {
 
 font-size: 30p;
 color: rgb(123, 255, 0);
+box-shadow : 10px 5 px 5px red;
+text-shadow : 1px 1px 2px pink;
+
 
 }
 a:visited { color:deepskyblue;
 }
 
+.test {color: blueviolet;
+   background : linear-gradient(to right, rgb(255, 255, 255), rgb(245, 0, 0));}
 
    p {
     font-size: 12pt;
