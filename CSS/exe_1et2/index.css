@@ -1,0 +1,36 @@
+body {
+    background-color:#000000;
+    margin-left: 100px;
+   }
+   h1 {
+    font-size: 48pt;
+    color :#FF0000;
+    font-style: italic;
+    border-bottom: solid thin rgb(189, 0, 0);
+   }
+    h2, h6 {font-size: 32pt;
+    color: chocolate;
+    
+      }
+   li
+   {font-size: 26pt;
+color: blue;
+   }
+h3, h4, h5 {
+
+font-size: 30p;
+color: rgb(123, 255, 0);
+
+}
+a:visited { color:deepskyblue;
+}
+
+
+   p {
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: Arial;
+    letter-spacing: 0.2mm;
+    word-spacing: 0.8mm;
+    color: rgb(153, 0, 255);
+   }
