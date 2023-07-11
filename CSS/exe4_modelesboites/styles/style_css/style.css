@@ -1,7 +1,47 @@
-h1  {
-        display: auto;
-        
+blockquote  {
+    display: flex-inline;
+background-color: yellow;
+color: ;   
+
+}
+
+   small {color: red;
+}
+
+/* Pour tous les paragraphes */
+p {
+    /* Ils auront exactement une largeur de 100px */
+    width: 161px;
+    /* Leur hauteur est définie automatiquement
+    en fonction de la taille du contenu */
+    height: auto;
+    /* La distance entre le contenu et la bordure
+    est 20px à droite et à gauche et est
+    10px en haut et en bas */
+    padding: 10px 20px 10px 20px;
+    /* On définit une bordure noire, large de 5px */
+    border: 1px solid blue;
+    /* La distance minimale entre un paragrapheet une autre boîte au-dessus ou en-dessous
+ sera de 20px */
+ margin: 20px 0 20px 0;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black ;
+    margin: 0 0 0 0;
     }
-    h1  {
-        margin: auto;
-    } 
+
+    code {
+        
+        border: 2px solid grey;
+        background-color: black;
+        color: white;
+}
+
+    
