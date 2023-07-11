@@ -1,0 +1,80 @@
+/* CSS */
+.jaune {
+    background-color: #ffff00;
+   }
+   .verte {
+    background-color: #00ff00;
+   }
+   .jaunes {
+    position: relative;
+    bottom: 5px;
+    left: 3em;
+    background-color: #ffff00;
+}
+    .vertes {
+        position: relative;
+        background-color: #00ff00;
+        width: 15em;
+        padding-right: 7em;
+       } 
+       .jauness {
+        position: absolute;
+        width: 4em;
+        top: 1em;
+        right: 1em;
+        background-color: #ffff00;
+       }
+      
+       .left
+       {
+        float: left;
+        width: 31.33%;
+        background-color: #00ff00;
+        margin: 1%;
+        height: 500px;
+        text-align: center;
+       }
+      
+       .menu {
+        position: right;
+        
+    
+       
+       }
+       body .menu {
+        position: right;
+       }
+       #suivant
+       {
+        background-color: yellow;
+        clear: both;
+       }
+       
+       .jauner {
+        background-color: #ffff00;
+        float: right;
+        width: 100px;
+        margin: 0;
+       }
+       .verter {
+        background-color: #00ff00;
+       } 
+
+       .menufixe {
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 1px solid #000000;
+        position: top;
+        z-index: 2;
+        text-align: center;
+        background-color: #ffffff;
+        line-height: 2em;
+       }
+       html>body .menufixe {
+        position: relative;
+        
+       }
+     
+       
+      
