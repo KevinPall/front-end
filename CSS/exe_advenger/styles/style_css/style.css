@@ -51,8 +51,9 @@ main a {
     text-decoration: none;
     text-align: right;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-right: 10px;
     float: right;
+
 }
 
 /* Pour les texte*/
@@ -68,12 +69,11 @@ h2{
     
     
 }
-/* pour que mon bouton du bas lire suite s'affiche dans le contenu*/
-main::after {
-    content: "";
-    display: table;
+/* pour les clear */
+.clear{
     clear: both;
 }
+
 
 /* FOOTER */
 footer {
@@ -81,3 +81,4 @@ footer {
     color: grey;
 
 }
+
