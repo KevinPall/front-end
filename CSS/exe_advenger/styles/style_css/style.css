@@ -1,0 +1,83 @@
+/* pour coller mon header et mon contenue */
+*{margin: 0;}
+
+/* BODY */
+body {
+    background: url("/CSS/exe_advenger/img/fond.png");
+}
+
+/* HEADER */
+header {
+    background: #EBDE9A;
+    display: flex;
+    width: 75%;
+    margin: auto;
+    
+}
+
+/* Menu */
+/*Navigation menu*/
+nav {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+
+
+}
+
+/*   Pour toutes les balises <a> contenues dans l'éléement avec un id menu*/
+nav a {
+    display: block;
+    color: orange;
+    text-decoration: none;
+    width: 30%;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* MAIN */
+main {
+    background: white;
+    width: 75%;
+   margin: auto;
+}
+
+/* pour gerer tout les a dans mon main */
+main a {
+
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+/* Pour les texte*/
+p {
+font-size: 16px;
+}
+
+/* pour les titre */
+h2{
+    color: orange;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    
+    
+}
+/* pour que mon bouton du bas lire suite s'affiche dans le contenu*/
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: grey;
+
+}
