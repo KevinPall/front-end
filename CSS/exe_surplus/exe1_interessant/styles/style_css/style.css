@@ -1,25 +1,27 @@
 /*CSS*/
- 
+
 /*HEADER */
 header {
-    width: auto;
-    height: auto;
+
     text-align: center;
     background-color: green;
+    color: white;
 }
-
+/* Bloquer le défilement horizontal de la page */
+body {
+    overflow-x: hidden;
+  }
 /*Navigation menu*/
-#menu
-{
+#menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 10px 20px 10px 20px;
-    border: 1px solid black ;
-    margin: 5px 5px 5px 5px;
-  
-    }
+    margin: auto;
+    list-style-type: none;
+    
+}
 
 /*   Pour toutes les balises <a> contenues dans l'éléement avec un id menu*/
 #menu a {
@@ -29,16 +31,54 @@ header {
     text-decoration: none;
     line-height: 2em;
     width: 100%;
-    border: 1px solid black;
+    border: 3px solid black;
     text-align: center;
     border-radius: 5px;
+    
 }
-#menu a:hover,
+
 #menu a:focus {
     color: black;
+    border-bottom: none;
+}
+
+#menu a.active {
+    border-bottom: none;
+    /* Supprime la bordure du bas pour l'élément actif */
+}
+
+/* regroupe la section et le aside*/
+.container {
+    display: flex;
 
 }
+
 /* affichage des livres premiere ligne*/
+section {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 0 calc(80% - 10px);
+    flex-wrap: wrap;
 
-/* affichage des livres deuxieme ligne*/
+}
+
+/* Pour gerer le aside*/
+aside {
+    border: 2px solid black;
+    flex: 20%;
+    margin-left: auto;
+    align-self: flex-start;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    margin: 1%;
+}
+
+/* taille des image */
+img {
+    width: 100px;
+    height: 100px;
+}
