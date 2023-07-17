@@ -1,5 +1,7 @@
 /* pour coller mon header et mon contenue */
-*{margin: 0;}
+* {
+    margin: 0;
+}
 
 /* BODY */
 body {
@@ -12,7 +14,7 @@ header {
     display: flex;
     width: 75%;
     margin: auto;
-    
+ align-items: center;
 }
 
 /* Menu */
@@ -21,8 +23,6 @@ nav {
     display: flex;
     width: 100%;
     list-style-type: none;
-
-
 }
 
 /*   Pour toutes les balises <a> contenues dans l'éléement avec un id menu*/
@@ -33,14 +33,15 @@ nav a {
     width: 30%;
     text-align: right;
     font-family: 'Oswald', sans-serif;
-
+    text-transform: uppercase;
+    justify-content: space-evenly;
 }
 
 /* MAIN */
 main {
     background: white;
     width: 75%;
-   margin: auto;
+    margin: auto;
 }
 
 /* pour gerer tout les a dans mon main */
@@ -52,33 +53,67 @@ main a {
     text-align: right;
     padding: 10px 20px;
     margin-right: 10px;
+    margin-bottom: 10px;
     float: right;
-
 }
 
 /* Pour les texte*/
 p {
-font-size: 16px;
+    font-size: 16px;
+    margin: 2%;
 }
 
 /* pour les titre */
-h2{
+h2 {
     color: orange;
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
-    
-    
-}
-/* pour les clear */
-.clear{
-    clear: both;
+    padding: 1%;
 }
 
+/* pour les clear */
+.clear {
+    clear: both;
+}
 
 /* FOOTER */
 footer {
     text-align: center;
     color: grey;
-
 }
 
+/* Pour les images */
+img {
+    padding: 1%;
+    height: auto;
+    max-width: 350px;
+    float: left;
+}
+
+/* pour gerer les ecran inferieur a 390px */
+@media screen and (max-width: 390px) {
+
+    /* Afficher les images et le texte en colonne */
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Espacer le menu dans le header */
+    nav a {
+        margin: 10px 0;
+    }
+
+    /* regle l'image pour le queries */
+    img {
+        max-width: 280px;
+    }
+}
