@@ -1,7 +1,8 @@
-
 /* BODY */
 body {
     background-color: #1B8B8F;
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -21,42 +22,46 @@ nav {
     list-style-type: none;
     justify-content: center;
     height: 50px;
+
 }
 
 /*   Pour toutes les balises <a> contenues dans l'éléement avec un id menu*/
 nav a {
-    display: block;
+    display: flex;
     color: white;
     text-decoration: none;
-    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
-    line-height: 50px;
-    text-align: center;
-    
-    
-
-
+    padding: 10px;
 }
 
-.container
-{
+/* Pour la transition du menu  */
+nav a:hover {
+    background-color: #a79189;
+    transition: ease 0.6s;
+}
+
+/* Regroupe le header et le main dans cette classe */
+.container {
     display: flex;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
+
 /* Section  */
 section {
     flex: 70%;
     background: #448088;
     margin: auto;
 }
+
 /* Pour l'image dans la section */
 section img {
     border-radius: 10px;
     margin-top: 10px;
+    width: 580px;
+    margin-left: 10px;
 }
 
 /* Pour les texte*/
@@ -64,6 +69,7 @@ p {
 
     margin: 2%;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
 }
 
 /* pour les titre */
@@ -77,6 +83,8 @@ h3 {
     padding: 1%;
     border-radius: 10px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Pour gerer le aside*/
@@ -84,7 +92,67 @@ aside {
 
     flex: 30%;
     background-color: white;
-    
-   
-    
+}
+
+
+/* pour gerer les ecran inferieur a 960px */
+@media screen and (max-width: 960px) {
+
+    /* body */
+    body {
+        width: 100%;
+    }
+
+    /* Gere mon menu */
+    nav {
+
+        height: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Regroupe le header et le main dans cette classe */
+    .container {
+        flex-direction: column;
+        margin-bottom: 10px;
+
+    }
+}
+
+/* Styles pour gérer les écrans inférieurs à 560px */
+@media screen and (max-width: 560px) {
+
+    /* body */
+    body {
+        width: 100%;
+
+    }
+
+    /* Pour l'image dans la section */
+    section img {
+        border-radius: 10px;
+        width: 500px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Gere mon menu */
+    nav {
+        flex-direction: column;
+
+
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* fait disparaitre mon aside */
+    aside {
+        display: none;
+    }
 }

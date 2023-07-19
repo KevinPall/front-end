@@ -27,7 +27,7 @@ nav {
 
 /*   Pour toutes les balises <a> contenues dans l'éléement avec un id menu*/
 nav a {
-    display: block;
+    display: flex;
     color: orange;
     text-decoration: none;
     width: 30%;

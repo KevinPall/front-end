@@ -1,0 +1,41 @@
+/* Pour tout le contenu possible  */
+body {
+    padding: 10px;
+    border: 5px solid black;
+    font-family: 'Courgette', cursive;   
+}
+/* Pour la topbar */
+.topbar{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* Header container*/
+header .container { 
+    background-color: #F5D3F4;
+    width: 100%;
+}
+
+/* Pour les balise container */
+.container{
+    width: 75%;
+    max-width: 1500px;
+}
+/* Pour le bouton panier */
+#cart {
+    float: right;
+}
+/* Pour la navigation header */
+nav{
+    
+}
+nav a {
+color: black;
+text-decoration: none;
+
+}
+
+/* Pour les effet sur les liens */
+a:hover{
+    transition:ease 0.2s;
+}
