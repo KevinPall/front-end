@@ -39,6 +39,7 @@
     <label for="Courriel">Courriel</label><br />
     <br />
     <span>Jours de la semaine où vous êtes diposnible :</span><br />
+    <br>
     <input name="jourdispo[]" type="checkbox" value="lundi" />Lundi<br />
     <input name="jourdispo[]" type="checkbox" value="mardi" />Mardi<br />
     <input name="jourdispo[]" type="checkbox" value="mercredi" />Mercredi<br />
