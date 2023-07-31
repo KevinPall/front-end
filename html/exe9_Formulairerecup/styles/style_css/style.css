@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0;
+ }
+ 
+ .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 80%;
+    margin-top: 20px;
+}
+
+  img {
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 5px;
+    align-self: flex-start;
+    
+  }
+  /* Pour gerer le formulaire */
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 1px solid #1abc9c;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f4f7f8;
+    
+  }
+  /* Pour gerer tout la partie gauche du formulaire  */
+  #gauche {
+    flex: 1;
+    margin-right: 20px;
+  }
+  /* Pour les input a gauche */
+  #gauche input{
+    width: 90%;
+    background-color: #E8EEEF;
+    border: none;
+    border-radius: 5px;
+  }
+/* Pour la partie commentaire de gauche */
+  #gauche textarea {
+    width: 90%;
+    resize: none;
+    background-color: #E8EEEF;
+    border: none;
+    border-radius: 5px;
+  }
+  /* Pour la selection a gauche */
+  #gauche select {
+    width: 90%;
+    background-color: #E8EEEF;
+    border: none;
+    border-radius: 5px;
+  }
+  /* Pour gerer la partie droite */
+  #droite {
+    flex: 1;
+  }
+  /* Pour gerer les texte en dehors des selection */
+  span {
+ font-weight: bold;
+  }
+/* Pour gerer le bouton envoyer */
+  button {
+    background-color: #1abc9c;
+    color: white;
+    margin-top: 0px;
+    width: 100%;
+    align-self: flex-end;
+    border: 1px solid #1abc9c;
+    padding: 15px 0;
+    box-shadow: 0 0 5px #1abc9c;
+  }
+  /* Pour gerer le trait entre le bouton et les question */
+  hr {
+    height: 1px;
+    background-color: rgba(0, 128, 0, 0.37);
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
