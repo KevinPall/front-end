@@ -12,15 +12,15 @@
 Votre nom est : <strong><?php print $_POST["nom"];?></strong><br>
 Votre email est : <strong><?php print $_POST["email"];?></strong><br>
 Votre numéro de téléphone est : <strong><?php print $_POST["telephone"];?></strong><br>
-Votre poste est : <strong><?php print $_POST["poste"];?></strong><br>;
-Vos commentaire : <strong><?php print $_POST["commentaire"];?></strong><br>;
+Votre poste est : <strong><?php print $_POST["poste"];?></strong><br>
+Vos commentaire : <strong><?php print $_POST["commentaire"];?></strong><br>
 Vous souhaitez être contacté : <strong><?php print $_POST["optioncontact"];?></strong><br>
 <?php
 if (isset($_POST['jourdispo'])) {
     print "Jours de dispo : " ."<br>";
     print "<ul>";
-    foreach ($_POST['jourdispo'] as $valeur) {
-        print "<li><strong>" . $valeur ."</strong></li>" ."<br>";
+    foreach ($_POST['jourdispo'] as $jourdispo) {
+        print "<li><strong>" . $jourdispo ."</strong></li>" ."<br>";
     }
     print "</ul>";
 }
@@ -28,8 +28,8 @@ if (isset($_POST['jourdispo'])) {
 if (isset($_POST['rdv'])) {
     print "Preference pour un rdv : " ."<br>";
     print "<ul>";
-    foreach ($_POST['rdv'] as $valeur) {
-        print "<li><strong>" . $valeur ."</strong></li>" ."<br>";
+    foreach ($_POST['rdv'] as $jourdispo) {
+        print "<li><strong>" . $jourdispo ."</strong></li>" ."<br>";
     }
     print "</ul>";
 }

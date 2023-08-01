@@ -1,0 +1,118 @@
+html body {
+
+}
+
+body {
+    
+}
+/* Ce qui enveloppe tout le contenus du site */
+main {
+
+    flex: 0 0 70%;
+    background-color: #f0f0f0;
+    padding: 20px;
+box-shadow: 0 0 11px 0 rgba(0, 0, 0, 100);
+
+}
+
+/* Toute la partie header regroupant les 3 block qui suivent */
+header {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+   
+   
+}
+
+
+/* 1er block le lecteur */
+#lecteur {
+    flex: 1;
+  
+}
+/* Gere les boutton du lecteur */
+#lecteur button {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+  
+
+}
+#topL {
+
+   
+    
+}
+#bottomL {
+    
+}
+#bottomL input {
+    width: 29%;
+}
+/* 2em blocke la musique en cour */
+#musique {
+    flex: 1;
+    text-align: left;
+}
+#musique input {
+    width: 100%;
+}
+/* 3em block la recherche sur le site */
+#search {
+    flex: 1;
+    padding: ;
+    
+
+}
+
+/* Gere le menu */
+nav {
+    justify-content: flex-start;
+
+    display: flex;
+    width: 10%;
+    list-style-type: none;
+    justify-content: center;
+    height: 100px;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+/* Gere les lien du menu */
+nav a {
+    border: 1px solid grey;
+    padding: 5px;
+    text-decoration: none;
+    color: rgba(0, 81, 255, 0.61);
+    padding-right: 100px;
+
+}
+/* Regroupe le menu et les pochette */
+#nvm {
+    display: flex;
+}
+/* Pour les pochettes de musique  */
+#music {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    text-align: center;
+    color: rgba(0, 81, 255, 0.61);
+
+    
+}
+#cd {
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 100);
+}
+/* Pour les image des pochette */
+#music img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+@media screen and ()
