@@ -1,118 +1,276 @@
-html body {
-
-}
-
-body {
-    
-}
 /* Ce qui enveloppe tout le contenus du site */
 main {
-
     flex: 0 0 70%;
     background-color: #f0f0f0;
     padding: 20px;
-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 100);
-
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 100);
 }
 
 /* Toute la partie header regroupant les 3 block qui suivent */
 header {
-
     display: flex;
     align-items: center;
     text-align: center;
     padding-bottom: 30px;
-   
-   
 }
-
 
 /* 1er block le lecteur */
 #lecteur {
-    flex: 1;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
 }
+
+/* Gere la ligne du haut dans le lecteur */
+#topL {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
 /* Gere les boutton du lecteur */
 #lecteur button {
-    width: 100px;
-    margin: 10px;
+
+    margin: 10px 10px 10px 0;
     padding: 5px;
-  
-
+    border-radius: 10px;
+    border: solid black 1px;
 }
-#topL {
 
-   
-    
+/* Gere les bouton du haut dans le lecteur */
+#topL button {
+    width: 81px;
 }
+
+/* Gere la ligne du bas dans le lecteur */
 #bottomL {
-    
+    width: 100%;
+    display: flex;
 }
+
+/* Gere les bouton dans la ligne du bas du lecteur */
+#bottomL button {
+    width: 30px;
+}
+
+/* Gere la barre son dans le lecteur */
 #bottomL input {
-    width: 29%;
+    width: 50%;
+    margin-right: 4%;
 }
+
 /* 2em blocke la musique en cour */
 #musique {
-    flex: 1;
+
     text-align: left;
+    padding-left: 5%;
+    width: 40%;
 }
+
+/* Gere la barre de la musique dans le block du nom de l'artiste */
 #musique input {
     width: 100%;
 }
+
 /* 3em block la recherche sur le site */
 #search {
-    flex: 1;
-    padding: ;
-    
+    position: relative;
+    top: -30px;
+    margin-left: 5%;
+    width: 23%;
+}
+
+#site-search {
+    border-radius: 0px 5px 5px 0;
+    border: solid gray 1px;
+    outline: none;
+}
+
+/* Gere le bouton de recherche */
+#search button {
+    margin-right: -6px;
+    border: solid gray 1px;
+    border-radius: 5px 0 0 5px;
 
 }
 
 /* Gere le menu */
 nav {
     justify-content: flex-start;
-
     display: flex;
     width: 10%;
     list-style-type: none;
     justify-content: center;
-    height: 100px;
+    height: 100%;
     flex-direction: column;
-    padding: 10px;
-
+    padding-right: 40px;
+    margin-top: 10px;
 }
 
 /* Gere les lien du menu */
 nav a {
     border: 1px solid grey;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color: rgba(0, 81, 255, 0.61);
     padding-right: 100px;
-
 }
+
+/* arrondie les angle de la premiere ligne du menu */
+nav a:nth-of-type(1) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* arrondie les angle de la ligne du bas dans le menu */
+nav a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: solid 0.1rem darkgrey;
+}
+
+/* gere le lien videos dans le menu */
+#videos {
+    border-top: none;
+    border-bottom: none;
+}
+
 /* Regroupe le menu et les pochette */
 #nvm {
     display: flex;
 }
+
 /* Pour les pochettes de musique  */
 #music {
-
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 1px;
     text-align: center;
     color: rgba(0, 81, 255, 0.61);
-
-    
+    width: 90%;
 }
+
+/* Pour gerer les contour qui contient chaque pochette */
 #cd {
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 100);
-}
-/* Pour les image des pochette */
-#music img {
-    max-width: 100%;
-    max-height: 100%;
-    
+    margin: 10px;
+    border-radius: 5px;
 }
 
-@media screen and ()
+/* Pour les image des pochette */
+#music img {
+    max-width: 95%;
+    max-height: 100%;
+    margin-top: 3%;
+}
+
+/* Pour les medias querries */
+/* Pour les mobile */
+@media screen and (max-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    /* Réorganiser les sections du header en colonne */
+    header {
+        flex-direction: column;
+        align-items: center;
+       width: 100%;
+       padding: 0;
+    }
+
+    /* Ajuster la taille des images des pochettes pour les mobiles */
+    #music img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    /* Ajuster la largeur du bloc du lecteur */
+    #lecteur {
+        width: 100%;
+
+    }
+
+    /* Ajuster la largeur du bloc de musique en cours */
+    #musique {
+        width: 100%;
+        order: 1;
+
+    }
+
+    #music {
+        order: 2;
+    }
+
+    /* Ajuster la largeur du bloc de recherche */
+    #search {
+        width: 100%;
+        position: inherit;
+        order: 2;
+        
+    }
+
+    #nvm {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* Réduire la taille des liens du menu pour les mobiles */
+    nav a {
+        padding: 10px;
+    }
+
+    /* Ajuster la largeur du menu pour les mobiles */
+    nav {
+        width: 100%;
+        order: 1;
+     
+    }
+
+    /* Pour les pochettes de musique  */
+    #music {
+
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    #cd {
+        width: 100%;
+        
+        
+    }
+    /* Gere la barre son dans le lecteur */
+#bottomL input {
+    width: 100%;
+    margin-right: 4%;
+}
+/* Gere les bouton du haut dans le lecteur */
+#topL button {
+    width: 115px;
+}
+/* Gere la barre de la musique dans le block du nom de l'artiste */
+#musique input {
+    width: 95%;
+}
+#search{
+    margin: 0;
+}
+#site-search {
+  width: 90%;
+  height: 3em;
+}
+
+/* Gere le bouton de recherche */
+#search button {
+    height: 3em;
+    width: 10%;
+
+}
+
+}
